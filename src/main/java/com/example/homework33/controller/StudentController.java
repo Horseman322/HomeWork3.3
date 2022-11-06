@@ -6,6 +6,7 @@ import com.example.homework33.record.StudentRecord;
 import com.example.homework33.service.StudentService;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Collection;
 
 @RestController

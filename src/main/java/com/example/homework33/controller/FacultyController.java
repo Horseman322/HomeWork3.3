@@ -6,6 +6,7 @@ import com.example.homework33.service.FacultyService;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Collection;
 
 ;
@@ -30,7 +31,7 @@ public class FacultyController {
 
     @PutMapping("/{id}")
     public FacultyRecord update(@PathVariable long id,
-                          @RequestBody @Valid  FacultyRecord facultyRecord){
+                          @RequestBody @Valid FacultyRecord facultyRecord){
         return facultyService.update(id, facultyRecord);
     }
 
@@ -43,5 +44,6 @@ public class FacultyController {
     public Collection<FacultyRecord> findByColor(@RequestParam String color){
         return facultyService.findByColor(color);
     }
+
 
 }

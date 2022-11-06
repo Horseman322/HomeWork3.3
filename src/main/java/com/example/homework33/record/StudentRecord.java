@@ -2,6 +2,7 @@ package com.example.homework33.record;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 
 public class StudentRecord {
 
@@ -47,3 +48,4 @@ public class StudentRecord {
         this.age = age;
     }
 }
+

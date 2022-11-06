@@ -1,5 +1,7 @@
 package com.example.homework33.record;
 
+import javax.validation.constraints.NotBlank;
+
 public class FacultyRecord {
 
     private Long id;
@@ -42,3 +44,4 @@ public class FacultyRecord {
         this.color = color;
     }
 }
+
